@@ -49,7 +49,6 @@ spec:
           ui:field: RepoUrlPicker
           ui:options:
             allowedHosts:
-              - github.com
               - gitlab.sebx.io
 
   steps:
