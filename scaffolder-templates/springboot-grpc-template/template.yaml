@@ -50,6 +50,7 @@ spec:
           ui:options:
             allowedHosts:
               - github.com
+              - gitlab.sebx.io
 
   steps:
     - id: template
@@ -72,7 +73,7 @@ spec:
       name: Publish
       action: publish:github
       input:
-        allowedHosts: ['github.com']
+        allowedHosts: ['github.com', 'gitlab.sebx.io']
         description: 'This is {{ parameters.component_id }}'
         repoUrl: '{{ parameters.repoUrl }}'
 
